@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
+
+// import ckeditor from './ckeditor/ckeditor.js';
 const loadScript = require('load-script');
 
-var defaultScriptUrl = 'https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js';
+var defaultScriptUrl =  'https://cdn.ckeditor.com/4.6.2/full/ckeditor.js';
 
 /**
  * @author codeslayer1
