@@ -7,6 +7,7 @@ const loadScript = require('load-script');
 
 var defaultScriptUrl =  'https://cdn.ckeditor.com/4.6.2/full/ckeditor.js';
 
+
 /**
  * @author codeslayer1
  * @description CKEditor component to render a CKEditor textarea with defined configs and all CKEditor events handler
@@ -80,6 +81,7 @@ CKEditor.defaultProps = {
   config: {},
   isScriptLoaded: false,
   scriptUrl: defaultScriptUrl,
+  image: upload,
   activeClass: '',
   events: {}
 };
@@ -92,5 +94,6 @@ CKEditor.propTypes = {
   activeClass: PropTypes.string,
   events: PropTypes.object
 };
+
 
 export default CKEditor;

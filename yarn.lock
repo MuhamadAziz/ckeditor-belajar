@@ -1944,6 +1944,13 @@ circular-json@^0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.3.tgz#815c99ea84f6809529d2f45791bdf82711352d66"
 
+ckeditor4-react@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ckeditor4-react/-/ckeditor4-react-0.1.0.tgz#d2fdff7c94cd561792ff360fcc74fd227422ee27"
+  dependencies:
+    load-script "^1.0.0"
+    prop-types "^15.6.2"
+
 ckeditor@^4.11.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/ckeditor/-/ckeditor-4.11.1.tgz#ace84b209573abf2b8430c214500e68ab06e7a14"
