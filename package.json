@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "ckeditor": "^4.11.1",
+    "ckeditor-react": "^1.0.1",
     "ckeditor4-react": "^0.1.0",
     "react": "^16.6.3",
     "react-ckeditor": "0.0.1",

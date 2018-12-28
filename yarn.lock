@@ -1944,6 +1944,12 @@ circular-json@^0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.3.tgz#815c99ea84f6809529d2f45791bdf82711352d66"
 
+ckeditor-react@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ckeditor-react/-/ckeditor-react-1.0.1.tgz#f27d9ad01f9b50bc9e05229c5a206d7a220e4fc3"
+  dependencies:
+    classnames "^2.1.2"
+
 ckeditor4-react@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/ckeditor4-react/-/ckeditor4-react-0.1.0.tgz#d2fdff7c94cd561792ff360fcc74fd227422ee27"
@@ -1963,6 +1969,10 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.1.2:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
 
 clean-css@4.2.x:
   version "4.2.1"

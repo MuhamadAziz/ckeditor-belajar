@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 // import ckeditor from './ckeditor/ckeditor.js';
 const loadScript = require('load-script');
 
-var defaultScriptUrl =  'https://cdn.ckeditor.com/4.6.2/full/ckeditor.js';
+var defaultScriptUrl =  'https://cdn.ckeditor.com/4.11.1/full-all/ckeditor.js';
 
 
 /**
@@ -59,8 +59,79 @@ class CKEditor extends React.Component {
 
     this.editorInstance = window.CKEDITOR.appendTo(
       ReactDOM.findDOMNode(this),
-      this.props.config,
-      this.props.content
+
+      {
+        extraPlugins: 'easyimage',
+        removePlugins: 'image',
+        removeDialogTabs: 'link:advanced',
+        toolbar: [{
+            name: 'document',
+            items: ['Undo', 'Redo']
+          },
+          {
+            name: 'styles',
+            items: ['Format']
+          },
+          {
+            name: 'basicstyles',
+            items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat']
+          },
+          {
+            name: 'paragraph',
+            items: ['NumberedList', 'BulletedList']
+          },
+          {
+            name: 'links',
+            items: ['Link', 'Unlink']
+          },
+          {
+            name: 'insert',
+            items: ['EasyImageUpload']
+          }
+        ],
+        height: 630,
+        cloudServices_uploadUrl: 'https://33333.cke-cs.com/easyimage/upload/',
+        // Note: this is a token endpoint to be used for CKEditor 4 samples only. Images uploaded using this token may be deleted automatically at any moment.
+        // To create your own token URL please visit https://ckeditor.com/ckeditor-cloud-services/.
+        cloudServices_tokenUrl: 'https://33333.cke-cs.com/token/dev/ijrDsqFix838Gh3wGO3F77FSW94BwcLXprJ4APSp3XQ26xsUHTi0jcb1hoBt',
+        easyimage_styles: {
+          gradient1: {
+            group: 'easyimage-gradients',
+            attributes: {
+              'class': 'easyimage-gradient-1'
+            },
+            label: 'Blue Gradient',
+            icon: 'https://ckeditor.com/docs/ckeditor4/4.11.1/examples/assets/easyimage/icons/gradient1.png',
+            iconHiDpi: 'https://ckeditor.com/docs/ckeditor4/4.11.1/examples/assets/easyimage/icons/hidpi/gradient1.png'
+          },
+          gradient2: {
+            group: 'easyimage-gradients',
+            attributes: {
+              'class': 'easyimage-gradient-2'
+            },
+            label: 'Pink Gradient',
+            icon: 'https://ckeditor.com/docs/ckeditor4/4.11.1/examples/assets/easyimage/icons/gradient2.png',
+            iconHiDpi: 'https://ckeditor.com/docs/ckeditor4/4.11.1/examples/assets/easyimage/icons/hidpi/gradient2.png'
+          },
+          noGradient: {
+            group: 'easyimage-gradients',
+            attributes: {
+              'class': 'easyimage-no-gradient'
+            },
+            label: 'No Gradient',
+            icon: 'https://ckeditor.com/docs/ckeditor4/4.11.1/examples/assets/easyimage/icons/nogradient.png',
+            iconHiDpi: 'https://ckeditor.com/docs/ckeditor4/4.11.1/examples/assets/easyimage/icons/hidpi/nogradient.png'
+          }
+        },
+        easyimage_toolbar: [
+          'EasyImageFull',
+          'EasyImageSide',
+          'EasyImageGradient1',
+          'EasyImageGradient2',
+          'EasyImageNoGradient',
+          'EasyImageAlt'
+        ]
+      }
     );
 
     //Register listener for custom events if any
@@ -81,7 +152,7 @@ CKEditor.defaultProps = {
   config: {},
   isScriptLoaded: false,
   scriptUrl: defaultScriptUrl,
-  image: upload,
+
   activeClass: '',
   events: {}
 };
