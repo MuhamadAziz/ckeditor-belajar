@@ -64,32 +64,32 @@ class CKEditor extends React.Component {
         extraPlugins: 'easyimage',
         removePlugins: 'image',
         removeDialogTabs: 'link:advanced',
-        toolbar: [{
-            name: 'document',
-            items: ['Undo', 'Redo']
-          },
-          {
-            name: 'styles',
-            items: ['Format']
-          },
-          {
-            name: 'basicstyles',
-            items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat']
-          },
-          {
-            name: 'paragraph',
-            items: ['NumberedList', 'BulletedList']
-          },
-          {
-            name: 'links',
-            items: ['Link', 'Unlink']
-          },
-          {
-            name: 'insert',
-            items: ['EasyImageUpload']
-          }
-        ],
-        height: 630,
+        // toolbar: [{
+        //     name: 'document',
+        //     items: ['Undo', 'Redo']
+        //   },
+        //   {
+        //     name: 'styles',
+        //     items: ['Format']
+        //   },
+        //   {
+        //     name: 'basicstyles',
+        //     items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat']
+        //   },
+        //   {
+        //     name: 'paragraph',
+        //     items: ['NumberedList', 'BulletedList']
+        //   },
+        //   {
+        //     name: 'links',
+        //     items: ['Link', 'Unlink']
+        //   },
+        //   {
+        //     name: 'insert',
+        //     items: ['EasyImageUpload']
+        //   }
+        // ],
+        height: 300,
         cloudServices_uploadUrl: 'https://33333.cke-cs.com/easyimage/upload/',
         // Note: this is a token endpoint to be used for CKEditor 4 samples only. Images uploaded using this token may be deleted automatically at any moment.
         // To create your own token URL please visit https://ckeditor.com/ckeditor-cloud-services/.
